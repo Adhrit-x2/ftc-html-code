@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Team 21376 Boom Shaka Laka</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="FTCWebsite.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "sidebar">
+            <div class = "top">
+                <div class = "logo">
+                    <i class='bx bx-meteor' ></i>
+                    <span>21376</span>
+                </div>
+                <i class = "bx bx-menu" id="btn"></i>
+            </div>
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <i class='bx bxs-home' ></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <i class='bx bxs-video-plus'></i>
+                        <span class="nav-item">Videos</span>
+                    </a>
+                    <span class="tooltip">Videos</span>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <i class='bx bx-share-alt'></i>
+                        <span class="nav-item">Outreach</span>
+                    </a>
+                    <span class="tooltip">Outreach</span>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <i class='bx bx-group'></i>
+                        <span class="nav-item">About Us</span>
+                    </a>
+                    <span class="tooltip">About Us</span>
+                </li>
+                <li class="dropdown">
+                    <a href="#">
+                        <i class='bx bx-math'></i>
+                        <span class="nav-item">Courses</span>
+                    </a>
+                    <span class="tooltip">Courses</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">CAD</a></li>
+                        <li><a href="#">Math</a></li>
+                        <li><a href="#">Programming</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- my code -->
+        <div class="main-content">
+            <div class="img"></div>
+            <div class="header">
+                <h1 class="title">Team 21376<br>Boom Shaka Laka</h1>
+            </div>
+        </div>
+    </body>
+    <script type>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector ('.sidebar');
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+            adjustTimes();
+        };
+    </script>
+    <script type>
+        let list = document.querySelectorAll(".list");
+        let tooltips = document.querySelectorAll(".tooltip");
+
+        for (var i = 0; i < list.length; i++) {
+
+        }
+    </script>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(27, 23, 23);
+    padding: .4rem .8rem;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 20;
+}
+
+.sidebar.active~.main-content {
+    left: 80px;
+}
+
+.sidebar.active{
+    width:250px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: white;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+
+.sidebar .top .logo{
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar.active .top .logo{
+    opacity: 1;
+}
+
+.top .logo i{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.sidebar ul li {
+    position: relative; 
+    list-style-type: none;
+    min-height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 1.5;
+    padding: 0px;
+}
+
+.sidebar ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    transition:0.2s;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.sidebar ul li a:hover{
+    width: 100%;
+    background-color: white;
+    color:rgb(27, 23, 23); 
+}
+
+.sidebar .nav-item{
+    opacity: 0;
+    transition: 0.2s;
+}
+.sidebar .nav-item.slow {
+    transition: 0.6s;
+}
+
+.sidebar.active .nav-item{
+    opacity: 1;
+    z-index: 2;
+} 
+
+.sidebar ul li .tooltip {
+    color: white;
+    background-color: rgb(27, 23, 23);
+    position: absolute;
+    top: 95%;
+    left: 300%;
+    white-space: nowrap;
+    line-height: 1.75;
+    transform: translate(-55%, -100%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    z-index: 20;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.sidebar ul li:hover .tooltip{
+    opacity: 1;
+}
+
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+ 
+/* my code */
+.main-content {
+    position: absolute;
+    background: url("https://photos.smugmug.com/Archive/2022-2023-1/High-School/Robotics-Tech-Challenge-Competition/n-5Spx5q/i-CnJG3fq/0/ca983c74/X4/i-CnJG3fq-X4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.main-content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0,2), rgba(0, 0, 0, 0.2));
+}
+
+/* <----Dropdown Menu -----> */
+.dropdown-menu {
+    position: absolute;
+    background-color: rgb(26, 23, 23);
+    box-shadow: 0 0 10px rgba(162, 45, 45, 1);
+    padding: 10px;
+    opacity: 0;
+    top: 60px;
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height 0.3s ease;
+    border-radius: 10px;
+    width: 100%;
+}
+.sidebar.active .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    max-height: 215px;
+}
+.dropdown-menu li {
+    list-style: none;
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
