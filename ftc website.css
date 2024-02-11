@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-style: normal;
 }
@@ -140,37 +142,10 @@ ul {
     display: none;
 }
  
-/* my code */
 .main-content {
     position: absolute;
     width: 100%;
     height: 100%;
-}
-.img {
-    position: fixed;
-    background: url("https://photos.smugmug.com/Archive/2022-2023-1/High-School/Robotics-Tech-Challenge-Competition/n-5Spx5q/i-CnJG3fq/0/ca983c74/X4/i-CnJG3fq-X4.jpg");
-    background-repeat: no-repeat;
-    background-position: calc(50% - 80px);
-    background-size: cover;
-    min-height: 100%;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: 100%;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.img::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
 }
 
 .main-content .header .title {
@@ -180,9 +155,10 @@ ul {
     font-weight: 700;
     text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
     z-index: 2;
-    position: fixed;
-    top: 35%;
-    left: 150px;
+    position: absolute;
+    left:-40%;
+    top: -15%;
+    text-align: left;
 }
 
 .dropdown-menu {
@@ -257,5 +233,77 @@ ul {
     0% {
         opacity: 1;
         max-height: 220px;
+    }
+}
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .parallax-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+.parallax-item h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+.palx2-para{
+    color: rgb(26, 23, 23);
+    width: 40%;
+    font-size: 1.5em;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 50%;
+} 
+  
+.parallax-item:first-child {
+    position: relative; /* Ensure proper layering */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.2)), url("https://photos.smugmug.com/Archive/2022-2023-1/High-School/Robotics-Tech-Challenge-Competition/n-5Spx5q/i-CnJG3fq/0/ca983c74/X4/i-CnJG3fq-X4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image covers the entire area */
+    min-height: 100vh;
+}
+ 
+.parallax-item:nth-child(2) {
+    background: url("https://images.pexels.com/photos/164357/pexels-photo-164357.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+}
+  
+.parallax-item:nth-child(3) {
+    background: url("https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+}
+  
+.parallax-item:nth-child(4) {
+    background: url("https://images.pexels.com/photos/832694/pexels-photo-832694.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+}
+  
+@media screen and (max-width: 768px) {
+    .parallax-item h2 {
+      font-size: 1.5rem;
     }
 }
