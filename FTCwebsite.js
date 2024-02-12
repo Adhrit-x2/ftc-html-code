@@ -21,13 +21,15 @@ let courses = document.querySelector(".dropdown");
 let menu = document.querySelector(".dropdown-menu");
 let dropped = false;
 function toggleDropdown() {
-    menu.style.display = "block";
-    if (dropped) {
-        retract();
-    } else {
-        drop();
+    if (sidebar.classList.contains("active")) {
+        menu.style.display = "block";
+        if (dropped) {
+            retract();
+        } else {
+            drop();
+        }
+        dropped = !dropped;
     }
-    dropped = !dropped;
 }
 
 function drop() {
