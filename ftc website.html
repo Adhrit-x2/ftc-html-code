@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title> Team 21376 Boom Shaka Laka</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="FTCWebsite.css">
+        <link rel="stylesheet" href="sidebar.css">
         <link rel="stylesheet" href="homepage.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,23 +14,18 @@
     </head>
     <body>
         <section>
-            <div id="parallax" class="parallax-item">
-                <div class="content">
-                    <div class="main-content">
-                        <div class="header">
-                            <h1 class="title">Team 21376<br>Boom Shaka Laka</h1>
-                        </div>
+            <div class="content">
+                <div class="top-content">
+                    <div class="header">
+                        <h1 class="title">Team 21376<br>Boom Shaka Laka</h1>
                     </div>
                 </div>
-            </div>
-            <div class="parallax-item">
-              <p class = "palx2-para">YES</p>
-            </div>
-            <div class="parallax-item">
-              <h2>yes</h2>
-            </div>
-            <div class="parallax-item">
-              <h2>YeS</h2>
+                <div class="info one">
+
+                </div>
+                <div class="info two">
+                    
+                </div>
             </div>
         </section>
         <div class = "sidebar">
@@ -42,44 +37,44 @@
                 <i class = "bx bx-menu" id="btn"></i>
             </div>
             <ul>
-                <li class="list">
+                <li class="nav-btn">
                     <a href="#">
                         <i class='bx bxs-home' ></i>
-                        <span class="nav-item">Dashboard</span>
+                        <span class="nav-item">Home</span>
                     </a>
-                    <span class="tooltip">Dashboard</span>
+                    <span class="tooltip">Home</span>
                 </li>
-                <li class="list">
+                <li class="nav-btn">
                     <a href="#">
                         <i class='bx bxs-video-plus'></i>
                         <span class="nav-item">Videos</span>
                     </a>
                     <span class="tooltip">Videos</span>
                 </li>
-                <li class="list">
+                <li class="nav-btn">
                     <a href="#">
                         <i class='bx bx-share-alt'></i>
                         <span class="nav-item">Outreach</span>
                     </a>
                     <span class="tooltip">Outreach</span>
                 </li>
-                <li class="list">
+                <li class="nav-btn">
                     <a href="#">
                         <i class='bx bx-group'></i>
                         <span class="nav-item">About Us</span>
                     </a>
                     <span class="tooltip">About Us</span>
                 </li>
-                <li class="list dropdown" onclick="toggleDropdown();">
+                <li class="nav-btn dropdown" onclick="toggleDropdown();">
                     <a href="#">
                         <i class='bx bx-math'></i>
                         <span class="nav-item">Courses</span>
                     </a>
                     <span class="tooltip">Courses</span>
                     <ul class="dropdown-menu">
-                        <li><a href="#">CAD</a></li>
-                        <li><a href="#">Math</a></li>
-                        <li><a href="#">Programming</a></li>
+                        <li class="drop-list" onclick="openNav();"><a href="#">CAD</a></li>
+                        <li class="drop-list" onclick="openNav();"><a href="#">Math</a></li>
+                        <li class="drop-list" onclick="openNav();"><a href="#">Programming</a></li>
                     </ul>
                 </li>
             </ul>
