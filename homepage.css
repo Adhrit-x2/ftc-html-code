@@ -1,8 +1,16 @@
-.main-content {
+.content {
     width: 100%;
     height: 100%;
 }
-.main-content .header .title {
+.top-content {
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.2)), url("https://photos.smugmug.com/Archive/2022-2023-1/High-School/Robotics-Tech-Challenge-Competition/n-5Spx5q/i-CnJG3fq/0/ca983c74/X4/i-CnJG3fq-X4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.top-content .header .title {
     color: white;
     font-family: "PT Sans";
     font-size: 4em;
@@ -13,8 +21,19 @@
     top: 35%;
     left: 150px;
 }
-
-.parallax-item {
+.info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.info.one {
+    background: red;
+}
+.info.two {
+    background: blue;
+}
+/*
+.homepage-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +45,14 @@
     box-shadow: 0px 0px 40px black;
   }
   
-.parallax-item h2 {
+.homepage-section h2 {
     font-size: 3rem;
     background-color: whitesmoke;
     padding: 1rem;
     border-radius: 1rem;
   }
 
-.palx2-para{
+.section-paragraph {
     color: rgb(27, 23, 23);
     width: 40%;
     font-size: 1.5em;
@@ -44,35 +63,38 @@
 } 
   
 .parallax-item:first-child {
-    position: relative; /* Ensure proper layering */
+    position: relative;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.2)), url("https://photos.smugmug.com/Archive/2022-2023-1/High-School/Robotics-Tech-Challenge-Competition/n-5Spx5q/i-CnJG3fq/0/ca983c74/X4/i-CnJG3fq-X4.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat;
     min-height: 100vh;
 }
  
 .parallax-item:nth-child(2) {
+    position: relative;
     background: url("https://lh3.googleusercontent.com/drive-viewer/AEYmBYROO27qN-yH0UZnNj-jVfNap_NKontGwYhAfQQ3y4lttn05wmRKoSZA3IXR9vhVY93cgNtvddQO16ZKNqTJ87U5fF3ZQQ=s1600");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    background-attachment: fixed;
     min-height: 600px;
 }
   
 .parallax-item:nth-child(3) {
+    position: relative;
     background: url("https://lh3.googleusercontent.com/drive-viewer/AEYmBYSVBJCnhKLyP9E0ZSNCyce20RxTUGVZgA6f47v1pCYqJDnmgBEr_fX7TBhapq3G_z6X52ahyNzNrqCbePmJslqG1nLH=s1600");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    background-attachment: fixed;
     min-height: 600px;
 }
   
 .parallax-item:nth-child(4) {
+    position: relative;
     background: url("https://lh3.googleusercontent.com/drive-viewer/AEYmBYSseU0pAumbpZxJiFX7qvgwNCPXnbwmqJdSKBswc-cVU36QX0c8Uw1GDGBJ5NEwDaypr97_tntoTIfedEaYi__xHtUKdA=s1600");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    background-attachment: fixed;
     min-height: 600px;
 }
   
@@ -81,3 +103,4 @@
       font-size: 1.5rem;
     }
 }
+*/
