@@ -1,84 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> Team 21376 Boom Shaka Laka</title>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="sidebar.css">
-        <link rel="stylesheet" href="homepage.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <section>
-            <div class="content">
-                <div class="top-content">
-                    <div class="header">
-                        <h1 class="title">Team 21376<br>Boom Shaka Laka</h1>
-                    </div>
-                </div>
-                <div class="info one">
-
-                </div>
-                <div class="info two">
-                    
-                </div>
-            </div>
-        </section>
-        <div class = "sidebar">
-            <div class = "top">
-                <div class = "logo">
-                    <i class='bx bx-meteor' ></i>
-                    <span>21376</span>
-                </div>
-                <i class = "bx bx-menu" id="btn"></i>
-            </div>
-            <ul>
-                <li class="nav-btn">
-                    <a href="#">
-                        <i class='bx bxs-home' ></i>
-                        <span class="nav-item">Home</span>
-                    </a>
-                    <span class="tooltip">Home</span>
-                </li>
-                <li class="nav-btn">
-                    <a href="#">
-                        <i class='bx bxs-video-plus'></i>
-                        <span class="nav-item">Videos</span>
-                    </a>
-                    <span class="tooltip">Videos</span>
-                </li>
-                <li class="nav-btn">
-                    <a href="#">
-                        <i class='bx bx-share-alt'></i>
-                        <span class="nav-item">Outreach</span>
-                    </a>
-                    <span class="tooltip">Outreach</span>
-                </li>
-                <li class="nav-btn">
-                    <a href="#">
-                        <i class='bx bx-group'></i>
-                        <span class="nav-item">About Us</span>
-                    </a>
-                    <span class="tooltip">About Us</span>
-                </li>
-                <li class="nav-btn dropdown" onclick="toggleDropdown();">
-                    <a href="#">
-                        <i class='bx bx-math'></i>
-                        <span class="nav-item">Courses</span>
-                    </a>
-                    <span class="tooltip">Courses</span>
-                    <ul class="dropdown-menu">
-                        <li class="drop-list" onclick="openNav();"><a href="#">CAD</a></li>
-                        <li class="drop-list" onclick="openNav();"><a href="#">Math</a></li>
-                        <li class="drop-list" onclick="openNav();"><a href="#">Programming</a></li>
-                    </ul>
-                </li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27136 website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">21376</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Courses</a>
+            <a href="#portfolio">Outreach</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="title21376">
+        <div>
+            <span>Team 21376</span>
+            <span>Boom Shaka Laka</span>
         </div>
-    </body>
-    <script src="FTCWebsite.js"></script>
+    </section>    
+    <section id="about">About</section>
+    <section id="services">Courses</section>
+    <section id="portfolio">Outreach</section>
+    <section id="contact">Contact</section>
+    <script src="script.js"></script>
+</body>
 </html>
