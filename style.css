@@ -75,11 +75,14 @@ h1 {
   position:absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100vh;
-  height: 100vh;
+  width: 100vw;
+  height: 100vw;
   border-radius: 50%; 
-  background-image: linear-gradient(whitesmoke,rgba(245, 245, 245, 0));
-  box-shadow:
+  background-image: radial-gradient(rgb(19,20,44),#000212);
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
+  z-index: -1;
+  /*box-shadow:
     inset 0 0 60px whitesmoke,
     inset 20px 0 80px #f0f,
     inset -20px 0 80px #0ff,
@@ -89,6 +92,7 @@ h1 {
     -10px 0 80px #f0f,
     10px 0 80px #0ff;
     z-index: -1;
+    */
 }
 
   /*
