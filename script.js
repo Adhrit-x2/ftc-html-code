@@ -1,3 +1,5 @@
+window.scrollTo(0, 0);
+
 function topNavFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
