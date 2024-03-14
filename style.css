@@ -31,8 +31,14 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-    font-family: "Lato";
     transition: 0.3s;
+}
+.topnav .nav-words {
+    font-family: "Lato";
+    display: block;
+}
+.topnav .nav-icons {
+    display: none;
 }
 .topnav a:hover {
     /*box-shadow: 0px 0px 10px whitesmoke;*/
@@ -40,7 +46,29 @@ body {
 }
 .topnav a:active {
     transform: scale(1);
-} 
+}
+@media screen and (max-width: 800px) {
+    .topnav .nav-words {
+        display: none;
+    }
+    .topnav .nav-icons {
+        display: block;
+    }
+    .information-section {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .information-section .sample-img {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .information-section .sample-img {
+        margin-right: 4%;
+    }
+}
+/*
 .topnav a.icon {
     display: none;
 }
@@ -73,7 +101,7 @@ body {
         text-align: left;
     }
 }
-  
+*/
 #main-content {
     background: rgb(4, 7, 24);
     padding-top: calc(50px + 10%);
@@ -87,16 +115,17 @@ body {
     z-index: 19;
     gap: 15px;
 }
-#main-content::before {
+.cool-circle {
     content: "";
     position: absolute;
+    top: 0;
     left: 50%;
     transform: translate(-50%, -45%);
     width: 100vw;
     height: 80vw;
     border-radius: 50%; 
-    background-image: radial-gradient(rgb(84, 59, 59),rgba(84, 59, 59, 0));
-    box-shadow: 0px 0px 150px rgba(84, 59, 59, 0.65);
+    background-image: radial-gradient(rgb(72, 28, 28),rgba(72, 28, 28, 0));
+    box-shadow: 0px 0px 150px rgba(72, 28, 28, 0.65);
     /*filter: blur(80px);
     -webkit-filter: blur(80px);*/
 }
@@ -125,11 +154,11 @@ body {
 }
 .learn-more {
     position: relative;
-    left: calc(50% - 7.5vw);
+    left: calc(50% - 25px - 6vw);
     font-family: "PT Sans";
-    font-size: 1.5vw;
-    width: 15vw;
-    height: 3.75vw;
+    font-size: calc(10px + 0.7vw);
+    width: calc(50px + 12vw);
+    height: calc(20px + 2.5vw);
     background: transparent;
     color: white;
     border: 2px solid white;
@@ -166,8 +195,8 @@ body {
 .eng-portfolio {
     position: relative;
     top: 0;
-    left: 8%;
-    width: 84%;
+    left: 0;
+    width: 100%;
     height: calc(440px + 20vw);
     background: transparent;
     z-index: 1;
@@ -223,8 +252,8 @@ body {
     transform: translate(-0.1vw, 0.1vw);
 }
 .eng-portfolio .flip-button.active:hover {
-    border-color: gray;
-    color: gray;
+    border-color: lightgray;
+    color: lightgray;
     cursor: pointer;
 }
 .eng-portfolio .flip-button.active:active {
@@ -236,68 +265,203 @@ body {
     font-family: "Lato";
 }
 
+.information-section {
+    background: rgb(63, 21, 21);
+    position: relative;
+    left: 5%;
+    width: 90%;
+    min-height: 50vh;
+    border-radius: 20px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.information-section .info-words {
+    margin: 4%;
+}
+.information-section .info-title {
+    color: white;
+    font-size: 3em;
+    font-family: "Oxygen";
+    font-weight: 900;
+}
+.information-section .paragraph {
+    color: white;
+    font-size: 1.5em;
+    font-family: "PT Sans";
+    margin-bottom: 2vw;
+}
+.information-section .sample-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    box-shadow: 3px 3px 10px black;
+    aspect-ratio: 1;
+}
+.abt {
+    background: url("https://lh3.googleusercontent.com/drive-viewer/AKGpihapVDItD7kqXEUgFasx6tqRxxVM1Pkq4bjY85vI2CKNpXP0F7nW9raM8Y4s_mIHJoarOvILkFRSQXbRZ2BrgiaZQzGnGg=s1600");
+}
+.orch {
+
+}
+.achv {
+
+}
+.socm {
+
+}
+
+.footer {
+    background: rgb(80, 80, 80);
+    position: relative;
+    width: 100%;
+    min-height: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.footer .list h1 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 1.7em;
+    font-family: "Nunito";
+}
+@media screen and (min-width: 1000px) {
+    .footer .list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+    .footer .list a {
+        position: relative;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: "Quicksand";
+        margin-bottom: 3px;
+        transition: 0.15s;
+    }
+    .footer .list a::before {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transition: 0.3s;
+    }
+    .footer .list a:hover {
+        cursor: pointer;
+    }
+    .footer .list a:hover::before {
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+    .footer .list a:active {
+        transform: scale(0.95);
+    }
+}
+.footer .logo {
+    position: relative;
+    width: 16vw;
+    aspect-ratio: 1.2;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+    .footer .list {
+        margin: 0 0 14px 0;
+        width: 100%;
+        height: 70px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .footer .list a {
+        display: none;
+    }
+    .footer .logo {
+        width: 300px;
+        align-self: center;
+    }
+}
+
 @keyframes flip-left-front {
     0% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg);
+        transform: translateX(0) perspective(4000px) rotateY(0deg);
     }
     100% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg);
     }
 }
 @-webkit-keyframes flip-left-front {
     0% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg);
+        transform: translateX(0) perspective(4000px) rotateY(0deg);
     }
     100% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg);
     }
 }
 @keyframes flip-left-back {
     0% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg) scaleX(-1);
+        transform: translateX(0) perspective(4000px) rotateY(0deg) scaleX(-1);
     }
     100% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg) scaleX(-1);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg) scaleX(-1);
     }
 }
 @-webkit-keyframes flip-left-back {
     0% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg) scaleX(-1);
+        transform: translateX(0) perspective(4000px) rotateY(0deg) scaleX(-1);
     }
     100% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg) scaleX(-1);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg) scaleX(-1);
     }
 }
 @keyframes flip-right-front {
     0% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg);
     }
     100% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg);
+        transform: translateX(0) perspective(4000px) rotateY(0deg);
     }
 }
 @-webkit-keyframes flip-right-front {
     0% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg);
     }
     100% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg);
+        transform: translateX(0) perspective(4000px) rotateY(0deg);
     }
 }
 @keyframes flip-right-back {
     0% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg) scaleX(-1);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg) scaleX(-1);
     }
     100% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg) scaleX(-1);
+        transform: translateX(0) perspective(4000px) rotateY(0deg) scaleX(-1);
     }
 }
 @-webkit-keyframes flip-right-back {
     0% {
-        transform: translateX(-100%) perspective(10000px) rotateY(-180deg) scaleX(-1);
+        transform: translateX(-100%) perspective(4000px) rotateY(-180deg) scaleX(-1);
     }
     100% {
-        transform: translateX(0) perspective(10000px) rotateY(0deg) scaleX(-1);
+        transform: translateX(0) perspective(4000px) rotateY(0deg) scaleX(-1);
     }
 }
 
