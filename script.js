@@ -130,3 +130,23 @@ function handleBackwardFlip() {
     }
 }
 */
+
+function adjustSize() {
+    const screenWidth = window.innerWidth;
+    const robotImages = document.querySelectorAll('.robot-container img');
+
+    // Determine the size based on screen width
+    let size = screenWidth < 601 ? 200 : 300;
+
+    // Set the size to the images
+    robotImages.forEach(img => {
+      img.style.width = size + 'px';
+      img.style.height = size + 'px';
+    });
+  }
+
+  // Initial adjustment
+  adjustSize();
+
+  // Re-adjust on window resize
+  window.addEventListener('resize', adjustSize);
