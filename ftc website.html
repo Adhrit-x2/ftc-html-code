@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>21376 website</title>
+        <title>Boom Shaka Laka</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -25,6 +25,7 @@
             </div>
             <button class="learn-more" onclick="$('html, body').animate({ scrollTop: 600, behavior: 'smooth' });">Learn more <i class="bx bx-chevrons-right" style="transform: translate(5%, 5%) scale(1.5);"></i></button>
             <div class="eng-portfolio">
+                <h1>Our Engineering Portfolio</h1>
                 <div class="page-container">
                     <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYgLGqI2e0fhpY0-FFXOWWDUl6KSywLHb_nWNYDke6-LAf5Pw1PTZ4HAFLazWHByOQi6e67zd4LhPHUFKLXjMQwHtQP5Q=s1600" class="portfolio-page port1">
                     <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbB9DDC76cQfsGUDb5Ya4HRoi7TOmOGOilWVlSyapzcLApnvZwOJeK9OPa77G03v1pb2_PuN1qNoCuH5R4yhWzA_RZ_9Q=s1600" class="portfolio-page port2">
@@ -55,17 +56,17 @@
             </div>
 
             <div class = "ourRobots-title">
-                <h1>Our robots</h1>
+                <h1>Our Robots</h1>
             </div>
 
             <div class="ourRobots">
                 <div class="robot-container">
                     <a href="#powerplay-robot-page"><img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbTdKP-shZaXOrFzldmRoj4mx_nQg1kpyYwnHFRl5u6LzBiUl2ZOOGxGjvcvHitSgrF5-JNRXLiTOjZZA6TYByCCHSgVw=s1600" alt="Robot 1"></a>
-                    <p class="text-overlay">PowerPlay</p>
+                    <span class="text-overlay">PowerPlay</span>
                 </div>
                 <div class="robot-container">
                     <a href ="#centerstage-robot-page"><img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXzU5Zc4HpMICq82VWVfZ5jOOY-hs7X5TYHS8RVPmJRmnNWLgnYHeiiOjgdiGG-yfxD0v2HyDZL80rPnXklqXMJyizQw=s1600" alt="Robot 2"></a>
-                    <p class="text-overlay">Centerstage</p>
+                    <span class="text-overlay">Centerstage</span>
                 </div>
                 
             </div>
@@ -144,25 +145,58 @@
             </div>
             <footer class="footer">
                 <div class="list">
-                    <h1>Team's Journey</h1>
-                    <a>2022-2023</a>
-                    <a>2023-2024</a>
+                    <div class="label">
+                        <h1 onclick="toggleDropdown(0);" class="list-header">Team's Journey</h1>
+                        <span class="footer-arrow material-symbols-outlined">arrow_drop_down</span>
+                    </div>
+                    <a class="big-a">2022-2023</a>
+                    <a class="big-a">2023-2024</a>
+                    <div class="footer-dropdown">
+                        <div class="small-a">
+                            <span>2022-2023</span>
+                        </div>
+                        <div class="small-a">
+                            <span>2023-2024</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="list">
-                    <h1>Meet the Team</h1>
-                    <a>Teammates</a>
-                    <a>Coaches</a>
-                    <a>Mentors</a>
+                    <div class="label">
+                        <h1 onclick="toggleDropdown(1);" class="list-header">Meet the Team</h1>
+                        <span class="footer-arrow material-symbols-outlined">arrow_drop_down</span>
+                    </div>
+                    <a class="big-a">Teammates</a>
+                    <a class="big-a">Coaches</a>
+                    <a class="big-a">Mentors</a>
+                    <div class="footer-dropdown">
+                        <div class="small-a">Teammates</div>
+                        <div class="small-a">Coaches</div>
+                        <div class="small-a">Mentors</div>
+                    </div>
                 </div>
                 <div class="list">
-                    <h1>Community Outreach</h1>
-                    <a>Past Activities</a>
-                    <a>Ongoing Efforts</a>
+                    <div class="label">
+                        <h1 onclick="toggleDropdown(2);" class="list-header">Community Outreach</h1>
+                        <span class="footer-arrow material-symbols-outlined">arrow_drop_down</span>
+                    </div>
+                    <a class="big-a">Past Activities</a>
+                    <a class="big-a">Ongoing Efforts</a>
+                    <div class="footer-dropdown">
+                        <div class="small-a">Past Activities</div>
+                        <div class="small-a">Ongoing Efforts</div>
+                    </div>
                 </div>
                 <div class="list">
-                    <h1>Social Media</h1>
-                    <a>Youtube</a>
-                    <a>Instagram</a>
+                    <div class="label">
+                        <h1 onclick="toggleDropdown(3);" class="list-header">Social Media</h1>
+                        <span class="footer-arrow material-symbols-outlined">arrow_drop_down</span>
+                    </div>
+                    <a class="big-a">Youtube</a>
+                    <a class="big-a">Instagram</a>
+                    <div class="footer-dropdown">
+                        <div class="small-a">Youtube</div>
+                        <div class="small-a">Instagram</div>
+                    </div>
                 </div>
                 <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ0j-nbr9F7mX0xdd9mh8FtOmemxyrtLeNnmDnCDbN4vIbPvC-dv9LF1t-RqOwIoHnUGg1dVXIu5euyioVuGwGE-jr6Sg=s1600" class="logo">
             </footer>
