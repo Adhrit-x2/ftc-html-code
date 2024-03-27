@@ -1,0 +1,136 @@
+* {
+    font-family: "Lato";
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(14, 17, 17);
+    overflow: none;
+}
+
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #f32121, rgb(233, 225, 13), #f32121);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+.about-centerstage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.centerstage-image {
+    background-color: rgb(14, 17, 17);
+    height: 90vh;
+    width: 75vh;
+    border: 5px solid #862a2a;
+    border-radius: 20px;
+}
+
+.first-paragraph {
+    color: white;
+    width: 35vw;
+    height: 48vh;
+    font-size: 25px;
+    margin: 0;
+}
+
+.robot-parts {
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row space-evenly;
+    justify-content: center;
+}
+
+.robot-part {
+    flex: 0 0 calc(27%);
+    margin: 5px;
+    color: white;
+    background-color: rgba(37, 41, 41, 0.4); 
+    text-align: center;
+    padding: 20px 20px 300px 20px;
+    border-radius: 10px;
+    border:solid rgba(255, 255, 255, 0.4) 2px;
+    transition: ease 0.3s;
+}
+
+.part-title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    padding: 10px 0px 0px 0px ;
+    margin: 0;
+}
+
+.robot-part:hover{
+    background:rgba(255, 255, 255, 0.1);
+    transform:scale(1.01);
+}
+
+@media (max-width: 1200px) {
+    .about-centerstage {
+        flex-direction: column;
+        height: auto;
+    }
+  
+    .about-centerstage img {
+        max-width: 80vw;
+        max-height: 80vw;
+        margin: 1px;
+    }
+
+    .title-first-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-paragraph{
+        width: 80%;
+        height: 48%;
+        overflow:visible;
+        padding: 0px 0px 1vw 0px;
+    }
+    .robot-part{
+        min-width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-centerstage {
+        flex-direction: column;
+        height: auto;
+    }
+  
+    .about-centerstage img {
+        max-width: 80vw;
+        max-height: 80vw;
+        margin: 1px;
+    }
+
+    .title-first-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-paragraph{
+        width: 80%;
+        height: 48%;
+        overflow:visible;
+        padding: 0px 0px 1vw 0px;
+    }
+
+    .robot-part{
+        min-width: 80%;
+    }
+}
