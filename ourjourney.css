@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 50px;
+    overflow: hidden;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.572);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    gap: 30px;
+}      
+  .topnav a {
+    background: transparent;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .topnav .nav-words {
+    font-family: "Lato";
+    display: block;
+  }
+  .topnav .nav-icons {
+    display: none;
+  }
+  .topnav a:hover {
+    /*box-shadow: 0px 0px 10px whitesmoke;*/
+    transform: scale(1.1);
+  }
+  .topnav a:active {
+    transform: scale(1);
+  }
+  @media screen and (max-width: 800px) {
+    .topnav .nav-words {
+        display: none;
+    }
+    .topnav .nav-icons {
+        display: block;
+    }
+    .information-section {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .information-section .sample-img {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .information-section .sample-img {
+        margin-right: 4%;
+    }
+  }
+
+.top-image {
+    background: url("https://lh3.googleusercontent.com/drive-viewer/AKGpihbFnFIknadjM1_nq7ounmVEn2CjYfdfGZ00f5nmXnjR6g5J6rDdlojjd2_rSd_iiR7XwE0mlUUpBaFQFuQ1roKQKlRmmA=s2560");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+  }
+.top-image::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.top-image h1 {
+  color: white;
+  margin: 0 auto;
+  position: fixed;
+  left: 25%;
+  width: 50%;
+  border-radius: 15px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 0px 10px black;
+  font-size: calc(60px + 2.5vw);
+  font-family: "Figtree";
+}
+
+
+#main-content {
+    background: rgb(14, 17, 17);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    height: auto; /* Adjust height as needed */
+    z-index: 19;
+}
+
+.years {
+  background: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.years h1 {
+  padding: 16px;
+  position: relative;
+  margin: 0;
+  width: calc(100% - 32px);
+  font-family: "Nunito";
+}
+.years h1::before {
+  margin: 16px;
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 32px);
+  height: 1px;
+}
+.years .para-img {
+  padding: 0 0 16px 16px;
+  width: calc(100% - 32px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.years .paragraph {
+  font-family: "PT Sans";
+  font-size: 1.2em;
+  width: 80%;
+  margin-top: 16px;
+}
+.years img {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border: 3px solid black;
+}
+@media screen and (max-width: 600px) {
+  .years .paragraph {
+    width: 100%;
+  }
+  .years img {
+    width: 400px;
+    height: 300px;
+  }
+  .years .para-img {
+    flex-flow: column nowrap;
+  }
+}
