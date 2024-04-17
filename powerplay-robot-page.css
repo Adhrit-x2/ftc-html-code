@@ -5,19 +5,18 @@
 
 body {
     background: rgb(14, 17, 17);
-    overflow: none;
 }
 
 h1 {
     font-size: 40px;
-    background: linear-gradient(to right, #f32121, rgb(89, 84, 148));
+    background: linear-gradient(to right, #f32121, rgb(126, 14, 14), #f32121);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     text-align: center;
 }
 
-.about-powerplay {
+.about-centerstage {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,8 +25,8 @@ h1 {
 
 .powerplay-image {
     background-color: rgb(14, 17, 17);
-    height: 100vh;
-    width: 100vh;
+    height: 90vh;
+    width: 75vh;
     border: 5px solid #862a2a;
     border-radius: 20px;
 }
@@ -75,14 +74,14 @@ h1 {
 }
 
 @media (max-width: 1200px) {
-    .about-powerplay {
+    .about-centerstage {
         flex-direction: column;
         height: auto;
     }
   
-    .about-powerplay img {
+    .about-centerstage img {
         max-width: 80vw;
-        max-height: 80vw;
+        max-height: 90vw;
         margin: 1px;
     }
 
@@ -105,14 +104,14 @@ h1 {
 }
 
 @media (max-width: 700px) {
-    .about-powerplay {
+    .about-centerstage {
         flex-direction: column;
         height: auto;
     }
   
-    .about-powerplay img {
+    .about-centerstage img {
         max-width: 80vw;
-        max-height: 80vw;
+        max-height: 100vw;
         margin: 1px;
     }
 
@@ -133,4 +132,59 @@ h1 {
     .robot-part{
         min-width: 80%;
     }
+    
+}
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 50px;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.572);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    gap: 30px;
+  }      
+  .topnav a {
+    background: transparent;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .topnav .nav-words {
+    font-family: "Lato";
+    display: block;
+  }
+  .topnav .nav-icons {
+    display: none;
+  }
+  .topnav a:hover {
+    /*box-shadow: 0px 0px 10px whitesmoke;*/
+    transform: scale(1.1);
+  }
+  .topnav a:active {
+    transform: scale(1);
+  }
+
+  @media screen and (max-width: 800px) {
+    .topnav .nav-words {
+        display: none;
+    }
+    .topnav .nav-icons {
+        display: block;
+    }
+}
+
+.container{
+    position: relative;
+    top:50px;
 }
