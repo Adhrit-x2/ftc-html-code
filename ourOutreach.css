@@ -85,7 +85,7 @@ body {
     }
   .top-image::before {
       content: "";
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(14, 17, 17, 0.433);
       position: absolute;
       top: 0;
       left: 0;
