@@ -188,3 +188,9 @@ h1 {
     position: relative;
     top:50px;
 }
+
+.imgForblocks{
+    width: 30vw;
+    height: 30vw;
+    padding: none;
+}
