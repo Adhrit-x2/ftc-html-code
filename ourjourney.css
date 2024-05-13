@@ -67,7 +67,7 @@ body {
   }
 
 .top-image {
-    background: url("https://lh3.googleusercontent.com/drive-viewer/AKGpihbFnFIknadjM1_nq7ounmVEn2CjYfdfGZ00f5nmXnjR6g5J6rDdlojjd2_rSd_iiR7XwE0mlUUpBaFQFuQ1roKQKlRmmA=s2560");
+    background: url("https://i.ibb.co/w6dND1Z/photo-for-website-1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -169,5 +169,164 @@ body {
   }
   .years .para-img {
     flex-flow: column nowrap;
+  }
+}
+.footer {
+  background: rgb(50, 50, 50);
+  position: relative;
+  width: 100%;
+  min-height: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 24px;
+}
+.footer .list_ h1 {
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 1.7em;
+  font-family: "Nunito";
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .list_ {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: column nowrap;
+  }
+  .footer .list_ .big-a {
+      position: relative;
+      margin: 0;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-family: "Quicksand";
+      margin-bottom: 3px;
+      transition: 0.15s;
+  }
+  .footer .list_ .big-a::before {
+      content: "";
+      background: white;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      transition: 0.3s;
+  }
+  .footer .list_ .big-a:hover {
+      cursor: pointer;
+  }
+  .footer .list_ .big-a:hover::before {
+      left: 0;
+      width: 100%;
+  }
+  .footer .list_ a:active {
+      transform: scale(0.95);
+  }
+  .footer-arrow.material-symbols-outlined {
+      display: none;
+  }
+  .footer-dropdown {
+      display: none;
+  }
+}
+.footer .logo {
+  position: relative;
+  width: 16vw;
+  aspect-ratio: 1.2;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+      align-items: flex-start;
+      flex-flow: column nowrap;
+  }
+  .footer .list_ {
+      position: relative;
+      width: 100%;
+      min-height: 70px;
+      border-bottom: 1px solid white;
+  }
+  .footer .list_ h1 {
+      position: relative;
+      margin: 0;
+      padding: 0px 12px 0px 12px;
+      line-height: 70px;
+      transition: all 0.3s ease;
+  }
+  .footer .list_ h1::before {
+      content: "";
+      background: white;
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      width: 0%;
+      height: 2px;
+      transition: 0.3s;
+  }
+  .footer .list_ h1:hover {
+      cursor: pointer;
+  }
+  .footer .list_ h1:hover::before {
+      left: 5%;
+      width: 90%;
+  }
+  .footer .list_ h1:active {
+      transform: scale(0.95);
+  }
+  .footer .label {
+      width: 100%;
+      max-height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row nowrap;
+  }
+  .footer-arrow.material-symbols-outlined {
+      font-size: 1.8em;
+      color: white;
+      display: block;
+  }
+  .footer .list_ .big-a {
+      display: none;
+  }
+  .footer .logo {
+      margin-top: 20px;
+      width: 300px;
+      align-self: center;
+  }
+  .footer-dropdown {
+      display: block;
+      background: rgba(0, 0, 0, 0.5);
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+  }
+  .footer-dropdown .small-a {
+      background: black;
+      color: white;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.5em;
+      font-family: "Quicksand";
+      margin-left: 12px;
+  }
+  .footer-dropdown .small-a:hover {
+      color: lightgray;
+  }
+  .footer-dropdown .small-a:active {
+      color: darkgray;
+  }
+  .footer a {
+    color: white;
+    text-decoration: none;
   }
 }
