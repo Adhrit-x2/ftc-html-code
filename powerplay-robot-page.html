@@ -24,10 +24,10 @@
             <img src="https://i.ibb.co/5c8sS7R/robot-pawa-play.png" alt="Robot 1" class="powerplay-image">
             </div>
     
-        <p class="part-title">Robot parts</p>
+        <p class="part-title">Robot Parts</p>
         <div class="robot-parts">
             <div class="robot-part">
-                Intake
+                <h2>Intake</h2>
                 <div class = "intake-paragraph">
                     <p>
                         We had two claw designs last year. 
@@ -39,14 +39,14 @@
                         The PLA, Polylactic acid plastic, is the red component and is the solid hard structure of the claw. 
                         The TPU, Thermoplastic Polyurethane plastic, is the white component. 
                         This plastic is flexible and provides the best grip out of all the different materials we have tested. <br> <br>
-                        <img src="https://i.ibb.co/jgc8fQ7/Screenshot-2024-05-10-at-1-13-32-PM.png" class = "imgForblocks" " border="0">
-                        <img src="https://i.ibb.co/mSRw9Th/Screenshot-2024-05-10-at-1-14-18-PM.png" class = "imgForblocks" " border="0">
                     </p>
+                    <img src="https://i.ibb.co/jgc8fQ7/Screenshot-2024-05-10-at-1-13-32-PM.png" class = "imgForblocks" " border="0">
+                    <img src="https://i.ibb.co/mSRw9Th/Screenshot-2024-05-10-at-1-14-18-PM.png" class = "imgForblocks" " border="0">
                 </div>
             </div>
     
             <div class="robot-part">
-                Scoring
+                <h2>Scoring</h2>
                 <div class = "scoring-paragraph">
                     <p>
                         Reverse 4-Bar Mechanism:
@@ -59,17 +59,14 @@
                         Our second prototype used 2 identical servo systems that turned in unison to achieve the degree of rotation that we need.
                         Virtual Reverse 4-Bar:	          
                         Our third prototype and current design uses gears to rotate the second segment of the wrist at the same rate as the first while keeping the entire system light and compact. <br> <br>
-                        <img src="https://i.ibb.co/0s9wWfV/Screenshot-2024-05-10-at-1-14-48-PM.png" class = "imgForblocks" border="0">
-                        <img src="https://i.ibb.co/QfrhHZj/Screenshot-2024-05-10-at-1-14-58-PM.png" class = "imgForblocks" border="0">
-
-
-
                     </p>
+                    <img src="https://i.ibb.co/0s9wWfV/Screenshot-2024-05-10-at-1-14-48-PM.png" class = "imgForblocks" border="0">
+                    <img src="https://i.ibb.co/QfrhHZj/Screenshot-2024-05-10-at-1-14-58-PM.png" class = "imgForblocks" border="0">
                 </div>
             </div>
     
             <div class="robot-part">
-                CAD
+                <h2>CAD</h2>
                 <div>
                     <p>
                         Gorail Bearing Spacer:
@@ -83,55 +80,65 @@
                         We created an end cap for our drive base’s u-channels to prevent damage to other robots and the field.
                         Beacon:
                         We wanted a beacon that would work so we can score both the beacon and the cone at the same time. For this to work, we printed the beacon out of TPU so that it would comply with the cone and stick with it as it goes through our scoring procedure. <br> <br>
-                        <img src="https://i.ibb.co/mRK6RqG/Screenshot-2024-05-10-at-1-15-22-PM.png" class = "imgForblocks" border="0">
-                        <img src="https://i.ibb.co/C8yRGjM/Screenshot-2024-05-10-at-1-15-39-PM.png" class = "imgForblocks" border="0">
                     </p>
+                    <img src="https://i.ibb.co/mRK6RqG/Screenshot-2024-05-10-at-1-15-22-PM.png" class = "imgForblocks" border="0">
+                    <img src="https://i.ibb.co/C8yRGjM/Screenshot-2024-05-10-at-1-15-39-PM.png" class = "imgForblocks" border="0">
                 </div>
             </div>
             <div class="robot-part">
-                Auto
+                <h2>Autonomy</h2>
                 <div>
                     <p>
-    
+                        This year for our autonomous program, we implemented the use of trapezoidal
+                        motion to have more accuracy and prevent loss of traction in the wheels. For
+                        machine vision, using Vuforia, we created code to use the pictures placed on
+                        the field walls to determine the position of the robot. We also implemented
+                        a motion axis for the robot's motors that includes the trapezoidal motion math
+                        and takes into account axis limits to prevent overextension and damage.
                     </p>
+                    <img src="https://i.ibb.co/yY97znb/Screenshot-2024-05-10-at-1-57-03-PM.png" class = "imgForblocks" border="0">
+                    <img src="https://i.ibb.co/dc0WyPY/Screenshot-2024-05-10-at-1-57-19-PM.png" class = "imgForblocks" border="0">
                 </div>
             </div>
             <div class="robot-part">
-                TeleOP
+                <h2>TeleOP</h2>
                 <div>
                     <p>
-                            
+                        For the driver-controlled period, we developed code that commands our arm
+                        to autonomously line up with the junctions, which immensely improved our
+                        cycle times. To make it easier for the drivers, we cubed the stick input
+                        values to make driving more precise for smaller inputs. We also implemented
+                        forward kinematics by using the angle and length of the arm to determine
+                        where the claw is. We used inverse kinematics to find the length and angle
+                        of the arm given a point.
                     </p>
+                    <img src="https://i.ibb.co/4VvwgGt/Screenshot-2024-05-10-at-1-56-06-PM.png" class = "imgForblocks" border="0">
+                    <img src="https://i.ibb.co/FhXfHFW/Screenshot-2024-05-10-at-1-56-29-PM.png" class = "imgForblocks" border="0">
                 </div>
             </div>
         </div>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="home">
+        <a href="/Users/jeremy/ftc website.html" class="home">
             <span class="nav-words">Team 21376</span>
-            <i class='tooltip nav-icons bx bx-meteor'>
-            </i>
+            <i class='nav-icons bx bx-meteor'></i>
         </a>
-        <a href="#courses" class="courses">
+        <a href="https://www.youtube.com/@ftcboomshakalaka9859" class="courses">
             <span class="nav-words">Courses</span>
-            <i class='tooltip nav-icons bx bx-math'>
-            </i>
+            <i class='nav-icons bx bx-math'></i>
         </a>
-        <a href="#outreach" class="outreach">
+        <a href="/Users/jeremy/ourOutreach.html" class="outreach">
             <span class="nav-words">Outreach</span>
-            <i class='tooltip nav-icons bx bx-network-chart'>
-            </i>
+            <i class='nav-icons bx bx-network-chart'></i>
         </a>
-        <a href="#about" class="about">
+        <a href="/Users/jeremy/ourjourney.html" class="about">
             <span class="nav-words">Our Journey</span>
-            <i class='tooltip nav-icons bx bx-rocket'>
-            </i>
+            <i class='nav-icons bx bx-rocket'></i>
         </a>
-        <a href="#about" class="about">
+        <a href="/Users/jeremy/ourteam.html" class="about">
             <span class="nav-words">Our Team</span>
-            <i class='tooltip nav-icons bx bx-group'>
-            </i>
+            <i class='nav-icons bx bx-group'></i>
         </a>
     </div>
     
