@@ -53,7 +53,7 @@ h1 {
     color: white;
     background-color: rgba(37, 41, 41, 0.4); 
     text-align: center;
-    padding: 20px 20px 300px 20px;
+    padding: 20px 20px 10px 20px;
     border-radius: 10px;
     border:solid rgba(255, 255, 255, 0.4) 2px;
     transition: ease 0.3s;
@@ -190,7 +190,6 @@ h1 {
 }
 
 .imgForblocks{
-    width: 30vw;
-    height: 30vw;
-    padding: none;
+    width: auto;
+    height: auto;
 }
